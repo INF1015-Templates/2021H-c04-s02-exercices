@@ -1,0 +1,8 @@
+settings/files_to_update.txt
+settings/variables.txt
+
+README.md
+
+Exercises/_version_prof/main.cpp
+Exercises/_version_prof/Arguments.hpp
+Exercises/_version_prof/Arguments.cpp

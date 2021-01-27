@@ -1,0 +1,7 @@
+{
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "cmake.debugConfig": {
+        "args": ["--number", "15", "-f", "data/data.txt" ],
+        "cwd": "${workspaceRoot}"
+    }
+}
