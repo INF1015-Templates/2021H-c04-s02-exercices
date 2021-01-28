@@ -20,22 +20,22 @@ struct MinMax {
 };
 
 
-void readValues_v1(int values[], int numValues);
+void readValues_v1(...);
 
-int getTotalGrade_v1(const int values[], int numValues);
+int getTotalGrade_v1(...);
 
-MinMax findMinMax_v1(const int values[], int numValues);
+MinMax findMinMax_v1(...);
 
-int getTotalGrade_v2(const vector<int>& values);
+int getTotalGrade_v2(...);
 
-vector<int> readValues_v2(int numValues);
+void readValues_v2(...);
 
-MinMax findMinMax_v2(const vector<int>& values);
+MinMax findMinMax_v2(...);
 
-void readValues_v3(span<int> values);
+void readValues_v3(...);
 
-int getTotalGrade_v3(span<const int> values);
+int getTotalGrade_v3(...);
 
-MinMax findMinMax_v3(span<const int> values);
+MinMax findMinMax_v3(...);
 
 void runCompetitionExample();
