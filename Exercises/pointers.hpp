@@ -11,3 +11,9 @@
 using namespace std;
 using namespace std::literals;
 
+
+void run1DDynamicArrayExample();
+
+void run2DDynamicArrayExample();
+
+

@@ -18,6 +18,7 @@
 
 #include "competition.hpp"
 #include "params.hpp"
+#include "pointers.hpp"
 
 using namespace std;
 using namespace std::literals;
@@ -27,8 +28,17 @@ int main() {
 	cout << "Parameters example:" << "\n";
 	runParamsExample();
 	cout << string(50, '-') << "\n";
+
 	cout << "Competition example:" << "\n";
 	runCompetitionExample();
+	cout << string(50, '-') << "\n";
+	
+	cout << "1D dynamic arrays example:" << "\n";
+	run1DDynamicArrayExample();
+	cout << string(50, '-') << "\n";
+	
+	cout << "2D dynamic arrays example:" << "\n";
+	run2DDynamicArrayExample();
 	cout << string(50, '-') << "\n";
 }
 
