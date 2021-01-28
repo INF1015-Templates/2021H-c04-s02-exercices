@@ -4,5 +4,9 @@ settings/variables.txt
 README.md
 
 Exercises/_version_prof/main.cpp
-Exercises/_version_prof/Arguments.hpp
-Exercises/_version_prof/Arguments.cpp
+Exercises/_version_prof/competition.hpp
+Exercises/_version_prof/params.hpp
+Exercises/_version_prof/pointers.hpp
+Exercises/_version_prof/competition.cpp
+Exercises/_version_prof/params.cpp
+Exercises/_version_prof/pointers.cpp

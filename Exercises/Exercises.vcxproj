@@ -147,15 +147,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Arguments.cpp" />
+    <ClCompile Include="competition.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="params.cpp" />
+    <ClCompile Include="pointers.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Arguments.hpp" />
+    <ClInclude Include="competition.hpp" />
+    <ClInclude Include="params.hpp" />
+    <ClInclude Include="pointers.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
-    <Text Include="data\data.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md" />

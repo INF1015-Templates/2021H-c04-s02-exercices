@@ -17,26 +17,35 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Arguments.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Arguments.cpp">
+    <ClCompile Include="competition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="params.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pointers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
-    <Text Include="data\data.txt">
-      <Filter>data</Filter>
-    </Text>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md" />
     <None Include=".vscode\settings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="competition.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="params.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pointers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
