@@ -14,6 +14,7 @@
 #include <cppitertools/range.hpp>
 
 using namespace std;
+using iter::range;
 
 
 void run1DDynamicArrayExample() {
@@ -23,11 +24,11 @@ void run1DDynamicArrayExample() {
 	array = new int[150];
 	// Adresses du tableau et des cases.
 	cout << "Address: " << array << endl;
-	for (int i : iter::range(3))
+	for (int i : range(3))
 		printf("&array[%i]: %p" "\n", i, &array[i]);
 	cout << "\n";
 	// Initialise chaque valeur du tableau à 0.
-	for (int i : iter::range(150))
+	for (int i : range(150))
 		array[i] = 0;
 	// Remet en disponibilité l'espace mémoire du tableau d'entiers.
 	delete[] array;
@@ -46,14 +47,14 @@ void run2DDynamicArrayExample() {
 	double** mat;
 	// Attribution de l'espace pour un tableau de 20 lignes x 30 colonnes:
 	mat = new double*[height]; // Espace pour les 20 pointeurs de lignes.
-	for (int row : iter::range(height)) // Pour chaque row,
+	for (int row : range(height)) // Pour chaque row,
 		mat[row] = new double[width]; // espace pour 30 colonnes de la row.
 	// Initialise chaque valeur de la mat à zéro:
-	for (int row : iter::range(height))
-		for (int col : iter::range(width))
+	for (int row : range(height))
+		for (int col : range(width))
 			mat[row][col] = 0.0;
 	// Libération de l'espace mémoire:
-	for (int row : iter::range(height)) // Pour chaque row,
+	for (int row : range(height)) // Pour chaque row,
 		delete[] mat[row]; // libérer l'espace pour la row.
 	delete[] mat; // Libérer l'espace mémoire des pointeurs de lignes.
 	mat = nullptr;
@@ -64,8 +65,8 @@ void run2DDynamicArrayExample() {
 	// Attribution de l'espace pour un tableau de 20 lignes x 30 colonnes:
 	mat2 = new double [height * width];
 	// Initialise chaque valeur de la mat à zéro:
-	for (int row : iter::range(height))
-		for (int col : iter::range(width))
+	for (int row : range(height))
+		for (int col : range(width))
 			mat2[row*width + col] = 0.0;
 	// Libération de l'espace mémoire:
 	delete[] mat2;

@@ -16,11 +16,12 @@
 
 using namespace std;
 using namespace std::literals;
+using iter::range;
 
 
 void readValues_v1(int values[], int numValues) {
 	cout << "Enter grades: ";
-	for (int i : iter::range(numValues))
+	for (int i : range(numValues))
 		cin >> values[i];
 }
 
@@ -28,7 +29,7 @@ int getTotalGrade_v1(const int values[], int numValues) {
 	int minVal = values[0];
 	int maxVal = values[0];
 	int total = 0;
-	for (int i : iter::range(numValues)) {
+	for (int i : range(numValues)) {
 		if (values[i] < minVal)
 			minVal = values[i];
 		else if (values[i] > maxVal)
@@ -40,7 +41,7 @@ int getTotalGrade_v1(const int values[], int numValues) {
 
 MinMax findMinMax_v1(const int values[], int numValues) {
 	MinMax result = {values[0], values[0]};
-	for (int i : iter::range(numValues)) {
+	for (int i : range(numValues)) {
 		if (values[i] < result.min)
 			result.min = values[i];
 		else if (values[i] > result.max)
@@ -54,7 +55,7 @@ vector<int> readValues_v2(int numValues) {
 	 vector<int> values;
 	// ou
 	//vector<int> values(numValues);
-	for (int i : iter::range(numValues)) {
+	for (int i : range(numValues)) {
 		int value;
 		cin >> value;
 		values.push_back(value);
