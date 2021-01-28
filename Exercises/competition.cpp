@@ -15,7 +15,6 @@
 #include "competition.hpp"
 
 using namespace std;
-using namespace std::literals;
 using iter::range;
 
 

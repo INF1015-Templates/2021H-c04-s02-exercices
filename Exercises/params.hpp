@@ -9,7 +9,6 @@
 #include <cstdint>
 
 using namespace std;
-using namespace std::literals;
 
 
 void swap_v1(int a, int b);
